@@ -40,11 +40,12 @@ class DashboardController extends Controller
         // return $request->all();
 
         $rules = [
-            'current_password' => 'required|min:6',
+            'current_password' => 'required',
             'password' => 'required|min:6|confirmed',
         ];
         $validator = Validator::make(request()->all(), $rules);
         if ($validator->fails()) {
+            Alert::error('Failed', $validator->errors()->first());
             return redirect()->back()
                 ->withErrors($validator);
         } else {
@@ -57,7 +58,7 @@ class DashboardController extends Controller
                     Alert::success('Success', 'Password has updated');
                     return redirect()->back();
                 } else {
-                    Alert::warning('Failed', 'Password confirmation invalid');
+                    Alert::warning('Failed', 'Current password invalid');
                     return redirect()->back();
                 }
             } else {

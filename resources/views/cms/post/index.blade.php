@@ -139,12 +139,6 @@ Post
 <script src="{{asset('adminto/dist/')}}/assets/libs/datatables/dataTables.keyTable.min.js"></script>
 <script src="{{asset('adminto/dist/')}}/assets/libs/datatables/dataTables.select.min.js"></script>
 
-<!-- Validation js (Parsleyjs) -->
-<script src="{{asset('adminto/dist/')}}/assets/libs/parsleyjs/parsley.min.js"></script>
-
-<!-- validation init -->
-<script src="{{asset('adminto/dist/')}}/assets/js/pages/form-validation.init.js"></script>
-
 {{-- Select2 --}}
 <script src="{{asset('adminto/dist')}}/assets/libs/select2/select2.min.js"></script>
 

@@ -174,13 +174,13 @@
                         </div>
                         <div class="form-group">
                             <label>New password</label>
-                            <input type="password" name="password" required="" placeholder="Input new password"
-                                class="form-control">
+                            <input type="password" name="password" minlength="6" required=""
+                                placeholder="Input new password" class="form-control">
                         </div>
                         <div class="form-group">
                             <label>Confirm new password</label>
                             <input type="password" name="password_confirmation" required=""
-                                placeholder="Input confirm new password" class="form-control">
+                                placeholder="Input confirm new password" minlength="6" class="form-control">
                         </div>
                 </div>
                 <div class="modal-footer">
@@ -202,6 +202,12 @@
 
     {{-- sweet alert --}}
     <script src="{{asset('adminto/dist/')}}/assets/libs/sweetalert2/sweetalert2.min.js"></script>
+
+    <!-- Validation js (Parsleyjs) -->
+    <script src="{{asset('adminto/dist/')}}/assets/libs/parsleyjs/parsley.min.js"></script>
+
+    <!-- validation init -->
+    <script src="{{asset('adminto/dist/')}}/assets/js/pages/form-validation.init.js"></script>
 
     @yield('js')
 

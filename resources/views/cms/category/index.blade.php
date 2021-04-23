@@ -106,11 +106,6 @@ Category
 <script src="{{asset('adminto/dist/')}}/assets/libs/datatables/dataTables.keyTable.min.js"></script>
 <script src="{{asset('adminto/dist/')}}/assets/libs/datatables/dataTables.select.min.js"></script>
 
-<!-- Validation js (Parsleyjs) -->
-<script src="{{asset('adminto/dist/')}}/assets/libs/parsleyjs/parsley.min.js"></script>
-
-<!-- validation init -->
-<script src="{{asset('adminto/dist/')}}/assets/js/pages/form-validation.init.js"></script>
 
 <script type="text/javascript">
 	window.table = $('#datatable').DataTable({

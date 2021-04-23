@@ -34,7 +34,7 @@
                 <li>
                     <a href="{{ route('admin.category.index') }}">
                         <i class="fas fa-layer-group"></i>
-                        <span> Category </span>
+                        <span> Categories </span>
                     </a>
                 </li>
                 <li>
