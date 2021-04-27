@@ -92,7 +92,6 @@ class LoginController extends Controller
                 'response' => 'Validation Error'
             ];
         } else {
-            return $request->all();
             $data = User::find(Auth::user()->id);
             // return $data->password;
             $cek = Hash::check($request->current_password, $data->password);
