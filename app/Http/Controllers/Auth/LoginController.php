@@ -80,8 +80,6 @@ class LoginController extends Controller
 
     public function changePassword(Request $request)
     {
-        return $request->all();
-
         $rules = [
             'current_password' => 'required|min:6|alpha_num',
             'password' => 'required|min:6|confirmed|alpha_num',
